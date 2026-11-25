@@ -1,0 +1,19 @@
+extends: pretrain.yaml
+runName: marchSmoke
+outputDir: runs/smoke
+data:
+  cacheRoot: /home/wang_zy/.cache/MARCH/smoke
+  manifestPath: runs/smokePreparation/manifest.json
+  statisticsPath: runs/smokePreparation/statistics.json
+  sourceIds: [mp-1, mp-10, mp-100, mp-1000, mp-10000, mp-10004, mp-10006, mp-1056418]
+  trainCount: 6
+  validationCount: 2
+  testCount: 0
+model:
+  preset: smoke
+training:
+  epochs: 3
+  gradientAccumulation: 1
+  maxOptimizerSteps: 8
+scheduler:
+  warmupEpochs: 0

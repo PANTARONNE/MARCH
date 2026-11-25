@@ -1,0 +1,7 @@
+# Bootstrap specification. Run: bash scripts/setupEnvironment.sh
+name: MARCH
+channels:
+  - defaults
+dependencies:
+  - python=3.10.22
+  - pip

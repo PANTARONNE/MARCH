@@ -1,0 +1,37 @@
+wandb: Tracking run with wandb version 0.28.0
+wandb: W&B syncing is set to `offline` in this directory. Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Run data is saved locally in runs/smokeResume/wandb/offline-run-20261023_042428-n4qbz9by
+wandb: View this run in the terminal with `wandb leet`
+{"step": 9, "wallTime": 1792700672.8800187, "train/actualMaskRatio": 0.3050847351551056, "train/loss": 1.5714514255523682, "train/rawMae": 0.2570110559463501, "train/gradientNorm": 2.69623064994812, "train/materialsInStep": 1, "train/epoch": 1, "train/epochTailDropped": 0, "train/learningRate": 0.0003775, "system/maxMemoryMiB": 86.578125}
+{"step": 10, "wallTime": 1792700676.1272714, "train/actualMaskRatio": 0.3333333432674408, "train/loss": 3.307053804397583, "train/rawMae": 0.7063392400741577, "train/gradientNorm": 78.94221496582031, "train/materialsInStep": 1, "train/epoch": 1, "train/epochTailDropped": 0, "train/learningRate": 0.0003775, "system/maxMemoryMiB": 86.578125}
+{"step": 10, "wallTime": 1792700690.9547994, "validation/actualMaskRatio": 0.2988031804561615, "validation/loss": 6.544330477714539, "validation/rawMae": 0.39492810517549515, "validation/materialCount": 2}
+wandb: 
+wandb: Run history:
+wandb:        system/maxMemoryMiB ▁▁
+wandb:      train/actualMaskRatio ▁█
+wandb:                train/epoch ▁▁
+wandb:     train/epochTailDropped ▁▁
+wandb:         train/gradientNorm ▁█
+wandb:         train/learningRate ▁▁
+wandb:                 train/loss ▁█
+wandb:      train/materialsInStep ▁▁
+wandb:               train/rawMae ▁█
+wandb: validation/actualMaskRatio ▁
+wandb:                         +3 ...
+wandb: 
+wandb: Run summary:
+wandb:        system/maxMemoryMiB 86.57812
+wandb:      train/actualMaskRatio 0.33333
+wandb:                train/epoch 1
+wandb:     train/epochTailDropped 0
+wandb:         train/gradientNorm 78.94221
+wandb:         train/learningRate 0.00038
+wandb:                 train/loss 3.30705
+wandb:      train/materialsInStep 1
+wandb:               train/rawMae 0.70634
+wandb: validation/actualMaskRatio 0.2988
+wandb:                         +3 ...
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync runs/smokeResume/wandb/offline-run-20261023_042428-n4qbz9by
+wandb: Find logs at: runs/smokeResume/wandb/offline-run-20261023_042428-n4qbz9by/logs

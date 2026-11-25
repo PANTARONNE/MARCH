@@ -1,0 +1,53 @@
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home/wang_zy/.netrc.
+wandb: Currently logged in as: wangzywave13 (wangzywave13-zhejiang-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run n4qbz9by
+wandb: Tracking run with wandb version 0.28.0
+wandb: Run data is saved locally in runs/smokeOnline/wandb/run-20261023_042144-n4qbz9by
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run marchSmoke
+wandb: ⭐️ View project at https://wandb.ai/wangzywave13-zhejiang-university/MARCH
+wandb: 🚀 View run at https://wandb.ai/wangzywave13-zhejiang-university/MARCH/runs/n4qbz9by
+{"step": 1, "wallTime": 1792700511.8616176, "train/actualMaskRatio": 0.30000001192092896, "train/loss": 2.6519381999969482, "train/rawMae": 0.30775097012519836, "train/gradientNorm": 14.562847137451172, "train/materialsInStep": 1, "train/epoch": 0, "train/epochTailDropped": 0, "train/learningRate": 0.0005, "system/maxMemoryMiB": 1517.3349609375}
+{"step": 2, "wallTime": 1792700515.2849927, "train/actualMaskRatio": 0.3333333432674408, "train/loss": 3.727721691131592, "train/rawMae": 0.7867242097854614, "train/gradientNorm": 63.88225173950195, "train/materialsInStep": 1, "train/epoch": 0, "train/epochTailDropped": 0, "train/learningRate": 0.0005, "system/maxMemoryMiB": 1517.3349609375}
+{"step": 3, "wallTime": 1792700523.580162, "train/actualMaskRatio": 0.2977527976036072, "train/loss": 5.528435707092285, "train/rawMae": 0.13609279692173004, "train/gradientNorm": 12.438841819763184, "train/materialsInStep": 1, "train/epoch": 0, "train/epochTailDropped": 0, "train/learningRate": 0.0005, "system/maxMemoryMiB": 1517.3349609375}
+{"step": 4, "wallTime": 1792700531.5830154, "train/actualMaskRatio": 0.40000003576278687, "train/loss": 0.8754051923751831, "train/rawMae": 0.12565095722675323, "train/gradientNorm": 415.9286804199219, "train/materialsInStep": 1, "train/epoch": 0, "train/epochTailDropped": 0, "train/learningRate": 0.0005, "system/maxMemoryMiB": 1517.3349609375}
+{"step": 5, "wallTime": 1792700539.3417237, "train/actualMaskRatio": 0.3050847351551056, "train/loss": 1.6161913871765137, "train/rawMae": 0.26821473240852356, "train/gradientNorm": 7.601105213165283, "train/materialsInStep": 1, "train/epoch": 0, "train/epochTailDropped": 0, "train/learningRate": 0.0005, "system/maxMemoryMiB": 1517.3349609375}
+{"step": 6, "wallTime": 1792700540.4782584, "train/actualMaskRatio": 0.29629629850387573, "train/loss": 0.8526214361190796, "train/rawMae": 0.09946533292531967, "train/gradientNorm": 6.473110198974609, "train/materialsInStep": 1, "train/epoch": 0, "train/epochTailDropped": 0, "train/learningRate": 0.0005, "system/maxMemoryMiB": 1517.3349609375}
+{"step": 6, "wallTime": 1792700541.7099788, "validation/actualMaskRatio": 0.2988031804561615, "validation/loss": 6.714470863342285, "validation/rawMae": 0.4129920080304146, "validation/materialCount": 2}
+{"step": 7, "wallTime": 1792700545.0819218, "train/actualMaskRatio": 0.30000001192092896, "train/loss": 16.745471954345703, "train/rawMae": 0.288985013961792, "train/gradientNorm": 4.785195350646973, "train/materialsInStep": 1, "train/epoch": 1, "train/epochTailDropped": 0, "train/learningRate": 0.0003775, "system/maxMemoryMiB": 1558.97314453125}
+{"step": 8, "wallTime": 1792700546.2857835, "train/actualMaskRatio": 0.40000003576278687, "train/loss": 0.746757984161377, "train/rawMae": 0.10988227277994156, "train/gradientNorm": 338.28240966796875, "train/materialsInStep": 1, "train/epoch": 1, "train/epochTailDropped": 0, "train/learningRate": 0.0003775, "system/maxMemoryMiB": 1558.97314453125}
+{"step": 8, "wallTime": 1792700547.5617886, "validation/actualMaskRatio": 0.2988031804561615, "validation/loss": 6.608092308044434, "validation/rawMae": 0.40324947237968445, "validation/materialCount": 2}
+wandb: updating run metadata
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading history steps 5-7, summary, console lines 7-9
+wandb: 
+wandb: Run history:
+wandb:        system/maxMemoryMiB ▁▁▁▁▁▁██
+wandb:      train/actualMaskRatio ▁▃▁█▂▁▁█
+wandb:                train/epoch ▁▁▁▁▁▁██
+wandb:     train/epochTailDropped ▁▁▁▁▁▁▁▁
+wandb:         train/gradientNorm ▁▂▁█▁▁▁▇
+wandb:         train/learningRate ██████▁▁
+wandb:                 train/loss ▂▂▃▁▁▁█▁
+wandb:      train/materialsInStep ▁▁▁▁▁▁▁▁
+wandb:               train/rawMae ▃█▁▁▃▁▃▁
+wandb: validation/actualMaskRatio ▁▁
+wandb:                         +3 ...
+wandb: 
+wandb: Run summary:
+wandb:        system/maxMemoryMiB 1558.97314
+wandb:      train/actualMaskRatio 0.4
+wandb:                train/epoch 1
+wandb:     train/epochTailDropped 0
+wandb:         train/gradientNorm 338.28241
+wandb:         train/learningRate 0.00038
+wandb:                 train/loss 0.74676
+wandb:      train/materialsInStep 1
+wandb:               train/rawMae 0.10988
+wandb: validation/actualMaskRatio 0.2988
+wandb:                         +3 ...
+wandb: 
+wandb: 🚀 View run marchSmoke at: https://wandb.ai/wangzywave13-zhejiang-university/MARCH/runs/n4qbz9by
+wandb: ⭐️ View project at: https://wandb.ai/wangzywave13-zhejiang-university/MARCH
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: runs/smokeOnline/wandb/run-20261023_042144-n4qbz9by/logs

@@ -1,0 +1,32 @@
+{
+  "source": "Z:/MaterialsProject-HAM/NextHAM",
+  "revision": "2a022290b83569e9b46a6d97ecb11334150993dd",
+  "license": "MIT",
+  "changes": "None. Adapter code resides in march/.",
+  "sha256": {
+    "LICENSE": "4cf99fbfda9f46ee35c1eada741cdc7c31e258f21b58423e838384a412bae70c",
+    "nets/__init__.py": "4fbd211d6283041ff2cf65ab81b0f0f28b12d08de836bd39a75741721ac99123",
+    "nets/drop.py": "9bb2416d739bd603bea2c279a53514d8aa686771dadaf0acceba13564ca74198",
+    "nets/expnorm_rbf.py": "6ab03be41656de5045d90342d79040b5a25778d4f46a64de50d2e9941cfeb641",
+    "nets/fast_activation.py": "17616b9ecc44f1bfdd433e5afd1d094f96c25e1c6a0720d8ed6aa231d1562ddc",
+    "nets/fast_layer_norm.py": "eb2e22d0904ae2f2354f049fc496c0776fa3d408ee1095f141d7c547bd0b8393",
+    "nets/gaussian_rbf.py": "32819042bcaea9e8d4a10e3ad8d0ab3872b3786964c7d222f7198731cbf407ce",
+    "nets/graph_attention_transformer.py": "33fa9e86dcf83609b19424f4f4b566d89c48b4c3aadc565cfc0aa2bae35e3087",
+    "nets/graph_norm.py": "f27971e871e4ef7a3e39fc3462e54817efdfe477d9b28160f9a26a8def3f3302",
+    "nets/instance_norm.py": "21b0a7f0618651d65c5bb07b74d04064bb07e249c8f283d562421dbbbe20273c",
+    "nets/layer_norm.py": "52688b10a62c954f2ff2187faf69c3a84009c62238049986d146ebadeb94030b",
+    "nets/nextham.py": "d0e34c35176957e201fd05dab32cf14ca4485d557d97f1cf1a046b8768bc0fc3",
+    "nets/radial_func.py": "5ca3e0c1d4c873defb11c019a517ba3b1f43b09353f9b4489f155fb6258f5a11",
+    "nets/registry.py": "5af1fc94e32f9b77ad44bf270b77c9dd3dc939830fa528d1a92c804745c7c956",
+    "nets/tensor_product_rescale.py": "ede1972e1b1cd0d27eaf0f17159894ea97e62a831ac2854b9a37bf4aec5e5bac",
+    "nets/tracegrad.py": "d7eddae6855a8171794efeda59df18701323da1412dd04e4d496cdc861656edb",
+    "tg_src/e3modules.py": "fb29abeb9137d16fa53788021eb783992f0680e0ea30fbc432ece2414db9d926",
+    "tg_src/model.py": "c4de5afc68114d75ca5535b5c9b4bbe466eba9a14812f2575195214393c6e1e8",
+    "tg_src/utils.py": "8a88c9b6fca4749e0f65f6367925c052971313811aef554399b7e37c95b7d86b",
+    "tg_src/from_dimenet/basis_utils.py": "59d6db6e38f166d374deee4f94a2a3e4e795b71732b77766db55adb8effb3da7",
+    "tg_src/from_nequip/cutoffs.py": "be9035d69fd82826751ddd1d4950d8db65332ca566216554e07fb49560d373aa",
+    "tg_src/from_nequip/radial_basis.py": "498be70610e227c36d824dc1b0a644c830c5da429843b94d2a55d0ee2b42fa58",
+    "tg_src/from_nequip/tp_utils.py": "0a6e874f692f92c0627fef95592eb6036a0aaebd6429c1102cfd6385a6274f68",
+    "tg_src/from_schnetpack/acsf.py": "65cc143977de08c4bfa9e4bf015087992c779dad38543fc67704c66595ca9c48"
+  }
+}

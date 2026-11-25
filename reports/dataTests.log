@@ -1,0 +1,12 @@
+...................                                                      [100%]
+=============================== warnings summary ===============================
+tests/testData.py: 12 warnings
+  /home/wang_zy/miniconda3/envs/MARCH/lib/python3.10/site-packages/spglib/spg.py:354: DeprecationWarning: Set OLD_ERROR_HANDLING to false and catch the errors directly.
+    _set_no_error()
+
+tests/testData.py::testStructureGroupsCannotCrossSplits
+  /home/wang_zy/miniconda3/envs/MARCH/lib/python3.10/site-packages/pymatgen/core/periodic_table.py:289: UserWarning: No Pauling electronegativity for He. Setting to NaN. This has no physical meaning, and is mainly done to avoid errors caused by the code expecting a float.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+19 passed, 13 warnings in 20.52s

@@ -1,0 +1,1 @@
+{"passed": true, "device": "cpu", "worldSize": 2, "optimizerSteps": 2, "maximumGradientErrors": [8.940696716308594e-08, 9.685754776000977e-08], "scope": "full four-layer SOC model including TraceGrad versus serial material averaging"}

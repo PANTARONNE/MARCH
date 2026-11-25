@@ -1,0 +1,10 @@
+extends: smoke.yaml
+runName: marchCpuDdpSmoke
+outputDir: runs/cpuDdpSmoke
+training:
+  device: cpu
+  distributedBackend: gloo
+  gradientAccumulation: 2
+  maxOptimizerSteps: 2
+logging:
+  mode: disabled

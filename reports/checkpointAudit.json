@@ -1,0 +1,52 @@
+[
+  {
+    "name": "cuda",
+    "status": "passed",
+    "before": {
+      "epoch": 1,
+      "nextSampleOffset": 2,
+      "globalStep": 8,
+      "bestValidationLoss": 6.608092308044434
+    },
+    "after": {
+      "epoch": 1,
+      "nextSampleOffset": 4,
+      "globalStep": 10,
+      "bestValidationLoss": 6.544330477714539
+    },
+    "worldSize": 1,
+    "optimizerStepRange": [
+      10.0,
+      10.0
+    ],
+    "perRankRandomStates": 1,
+    "modelUpdated": true,
+    "manifestUnchanged": true,
+    "statisticsUnchanged": true
+  },
+  {
+    "name": "cpuDdp",
+    "status": "passed",
+    "before": {
+      "epoch": 1,
+      "nextSampleOffset": 0,
+      "globalStep": 2,
+      "bestValidationLoss": 7.720357894897461
+    },
+    "after": {
+      "epoch": 1,
+      "nextSampleOffset": 2,
+      "globalStep": 3,
+      "bestValidationLoss": 7.34980845451355
+    },
+    "worldSize": 2,
+    "optimizerStepRange": [
+      3.0,
+      3.0
+    ],
+    "perRankRandomStates": 2,
+    "modelUpdated": true,
+    "manifestUnchanged": true,
+    "statisticsUnchanged": true
+  }
+]

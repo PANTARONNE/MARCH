@@ -1,0 +1,2 @@
+{"step": 3, "wallTime": 1792700762.2827992, "train/actualMaskRatio": 0.33460452407598495, "train/loss": 5.670759826898575, "train/rawMae": 0.3489376809448004, "train/gradientNorm": 5.129957675933838, "train/materialsInStep": 4, "train/epoch": 1, "train/epochTailDropped": 0, "train/learningRate": 0.0003775, "system/maxMemoryMiB": 0.0}
+{"step": 3, "wallTime": 1792700763.2804954, "validation/actualMaskRatio": 0.2988031655550003, "validation/loss": 7.34980845451355, "validation/rawMae": 0.46143291890621185, "validation/materialCount": 2}

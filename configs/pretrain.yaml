@@ -1,0 +1,54 @@
+seed: 2026
+runName: marchPretrain
+outputDir: runs/pretrain
+
+data:
+  sourceRoot: /mnt/y/Materials_HAM_SOC_DATABASE
+  cacheRoot: /home/wang_zy/.cache/MARCH/pretrain
+  manifestPath: runs/preparation/manifest.json
+  statisticsPath: runs/preparation/statistics.json
+  trainCount: 3500
+  validationCount: 250
+  testCount: 250
+  maskRatio: 0.30
+  validationMaskSeed: 12026
+
+model:
+  preset: main
+  layers: 4
+  attentionHeads: 4
+  radialBasis: 64
+  traceGrad: true
+
+optimizer:
+  name: adam
+  learningRate: 0.0005
+  betas: [0.9, 0.999]
+  epsilon: 0.00000001
+  weightDecay: 0.0
+
+scheduler:
+  name: cosine
+  warmupLearningRate: 0.000001
+  warmupEpochs: 5
+  minLearningRate: 0.00001
+
+training:
+  epochs: 100
+  perDeviceBatchSize: 1
+  gradientAccumulation: 4
+  clipGradientNorm: null
+  precision: float32
+  maxOptimizerSteps: null
+  numWorkers: 0
+  device: cuda
+  distributedBackend: nccl
+  findUnusedParameters: true
+
+logging:
+  enabled: true
+  project: MARCH
+  entity: null
+  mode: online
+  initTimeout: 60
+

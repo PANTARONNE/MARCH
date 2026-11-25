@@ -1,0 +1,8 @@
+# Copy and adapt these paths for your Linux server.
+extends: pretrain.yaml
+outputDir: runs/serverPretrain
+data:
+  sourceRoot: /data/Materials_HAM_SOC_DATABASE
+  cacheRoot: /scratch/MARCH/cache
+  manifestPath: runs/serverPreparation/manifest.json
+  statisticsPath: runs/serverPreparation/statistics.json

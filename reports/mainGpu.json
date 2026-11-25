@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "preset": "main",
+  "materialId": "mp-1",
+  "nodes": 1,
+  "edges": 15,
+  "allSavedValidBlocksUsed": true,
+  "hiddenWidth": 392,
+  "outputDimension": 5832,
+  "loss": 1.6479276418685913,
+  "actualMaskRatio": 0.4000000059604645,
+  "finiteGradients": true,
+  "finalNodeGradientL1": 93.41751590371132,
+  "peakMemoryMiB": 183.5205078125,
+  "seconds": 55.491532111002016,
+  "device": "NVIDIA GeForce RTX 4070",
+  "torchVersion": "2.2.0+cu121",
+  "cudaVersion": "12.1",
+  "e3nnVersion": "0.5.6"
+}
