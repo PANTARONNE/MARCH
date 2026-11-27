@@ -84,11 +84,11 @@ def loadSample(path, verifySymmetry=True):
     return sample
 
 
-def cacheSample(sample, path):
+def cacheSample(sample, path, *, finalPath=None):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     cached = dict(sample)
-    cached["cachePath"] = str(path.resolve())
+    cached["cachePath"] = str((path if finalPath is None else Path(finalPath)).resolve())
     temporary = path.with_suffix(path.suffix + ".temporary")
     torch.save(cached, temporary)
     temporary.replace(path)

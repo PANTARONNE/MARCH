@@ -7,9 +7,9 @@ data:
   cacheRoot: /home/wang_zy/.cache/MARCH/pretrain
   manifestPath: runs/preparation/manifest.json
   statisticsPath: runs/preparation/statistics.json
-  trainCount: 3500
-  validationCount: 250
-  testCount: 250
+  trainCount: 13598
+  validationCount: 1700
+  testCount: 1700
   maskRatio: 0.30
   validationMaskSeed: 12026
 

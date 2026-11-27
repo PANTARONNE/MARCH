@@ -1,0 +1,8 @@
+# Copy and adapt these paths for your Linux server.
+extends: pretrain.yaml
+outputDir: runs/pretrain
+data:
+  sourceRoot: /mnt/hamData/Materials_HAM_SOC_DATABASE
+  cacheRoot: /srv/work/cache/wzy/HAM_SOC_DATABASE/maskRatio_30
+  manifestPath: runs/dataPreparation_30/manifest.json
+  statisticsPath: runs/dataPreparation_30/statistics.json

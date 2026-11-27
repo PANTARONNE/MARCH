@@ -167,6 +167,32 @@ def testCompactRoundTrip(tmp_path):
     assert "eigenvectors" not in loaded
 
 
+def testParallelPreparationMatchesSerial(tmp_path):
+    from prepareData import prepareData
+
+    sources = ["missing", "first", "second", "extra"]
+    for index, name in enumerate(sources[1:]):
+        # Two compact sources target one cache file. The last accepted source wins.
+        sample = dict(schemaVersion=1, materialId="mp-1" if index < 2 else "mp-2",
+                      sourcePath=str(tmp_path / f"{name}.pth"), lattice=torch.eye(3),
+                      positions=torch.zeros(1, 3), atomicNumbers=torch.tensor([1]), audit={"index": index})
+        torch.save(sample, tmp_path / f"{name}.pth")
+    cache = tmp_path / "cache"
+    data = dict(sourceRoot=str(tmp_path), sourceIds=sources, cacheRoot=str(cache),
+                manifestPath=str(tmp_path / "manifest.json"), trainCount=2, validationCount=0, testCount=0)
+    config = {"seed": 2026, "data": data}
+    serial = prepareData(config)
+    audit = (tmp_path / "preparationAudit.json").read_text()
+    (cache / "mp-1.pt").unlink()
+    data["prepareWorkers"] = 2
+    assert prepareData(config) == serial
+    assert (tmp_path / "preparationAudit.json").read_text() == audit
+    assert list(cache.iterdir()) == [cache / "mp-1.pt"]
+    cached = loadSample(cache / "mp-1.pt")
+    assert cached["audit"] == {"index": 1}
+    assert cached["cachePath"] == str(cache / "mp-1.pt")
+
+
 @pytest.mark.skipif(not os.getenv("MARCH_SMOKE_SOURCE"), reason="Explicit real-data opt-in")
 def testRealSource(codec):
     sample = loadSample(Path(os.environ["MARCH_SMOKE_SOURCE"]))

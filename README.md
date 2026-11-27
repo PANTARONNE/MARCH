@@ -31,6 +31,8 @@ MARCH_SKIP_CUDA_CHECK=1 bash scripts/setupEnvironment.sh
 
 复制项目到服务器并安装环境。复制示例配置，按服务器实际路径修改 `sourceRoot`、`cacheRoot` 等字段：
 
+数据准备可用 `--workers 4` 同时处理 4 个文件，也可在 YAML 的 `data.prepareWorkers` 中设置进程数。命令行优先，默认值为 1。
+
 ```bash
 cp configs/server.example.yaml configs/server.yaml
 # 编辑 configs/server.yaml 后，三个阶段使用同一配置：
